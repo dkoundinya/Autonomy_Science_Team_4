@@ -1,0 +1,4 @@
+<launch>
+<include file="$(find turtlebot3_gazebo)/launch/group4.launch"/>
+<node name="turtlebot" pkg="assignment_3" type="testing.py" output="screen"/>
+</launch>
