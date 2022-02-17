@@ -4,7 +4,7 @@ from geometry_msgs.msg import Twist
 
 
 def turtle_circles(radius,velocity):
-    rospy.init_node('turtlesim',anonymous=True)
+    rospy.init_node('circle',anonymous=True)
     pub= rospy.Publisher('/cmd_vel',Twist,queue_size=10)
     rate=rospy.Rate(10)
     vel=Twist()
