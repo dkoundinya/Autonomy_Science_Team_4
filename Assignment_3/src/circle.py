@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 import rospy
 from geometry_msgs.msg import Twist
-import sys
+
 
 def turtle_circles(radius,velocity):
-    rospy.init_node('turtlesim',anonymous=True)
+    rospy.init_node('circle',anonymous=True)
     pub= rospy.Publisher('/cmd_vel',Twist,queue_size=10)
     rate=rospy.Rate(10)
     vel=Twist()
@@ -25,7 +25,7 @@ def turtle_circles(radius,velocity):
 
 if __name__ == '__main__':
     try:
-        #turtle_circles(sys.argv[1],sys.argv[2])
+        
         turtle_circles(1.0,0.50)
     except rospy.ROSInterruptException:
         pass

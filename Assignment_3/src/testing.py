@@ -28,7 +28,7 @@ def scan_callback(msg):
 if __name__ == '__main__':
      try:
          while not rospy.is_shutdown():
-            rospy.init_node('group4',anonymous=True)
+            rospy.init_node('emergency_brake',anonymous=True)
             pub=rospy.Publisher('/cmd_vel',Twist,queue_size=10)
             vel=Twist()
             scanpub= rospy.Publisher('/revised_scan',LaserScan,queue_size=10)

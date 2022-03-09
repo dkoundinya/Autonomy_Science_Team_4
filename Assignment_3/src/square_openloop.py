@@ -5,7 +5,7 @@ PI = 3.1415926535897
 
 def move():
     # Starts a new node
-    rospy.init_node('robot_cleaner', anonymous=True)
+    rospy.init_node('square', anonymous=True)
     velocity_publisher = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
     vel_msg = Twist()
     distance=2
@@ -58,18 +58,6 @@ def move():
         vel_msg.linear.x=0
         velocity_publisher.publish(vel_msg)
         break
-
-    
-    
-
-
-
-# if __name__ == '__main__':
-#     try:
-#         #Testing our function
-#         move()
-#     except rospy.ROSInterruptException: pass
-        
 
 
 if __name__ == '__main__':
