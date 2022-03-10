@@ -1,6 +1,6 @@
 # Assignment 5
 
-**Git clone the repository :
+### Git clone the repository :
 
 `git clone https://github.com/dkoundinya/Autonomy_Science_Team_4.git `
 
