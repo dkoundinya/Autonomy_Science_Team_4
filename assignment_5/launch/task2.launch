@@ -1,4 +1,0 @@
-<launch>
-<include file="$(find turtlebot3_gazebo)/launch/obstacles.launch"/>
-<node name="turtlebot" pkg="assignment_5" type="wander.py" output="screen"/>
-</launch>

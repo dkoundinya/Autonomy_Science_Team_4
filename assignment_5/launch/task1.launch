@@ -1,4 +1,0 @@
-<launch>
-<include file="$(find turtlebot3_gazebo)/launch/wall_following.launch"/>
-<node name="turtlebot" pkg="assignment_5" type="Part_1.py" output="screen"/>
-</launch>
