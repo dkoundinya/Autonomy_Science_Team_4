@@ -1,15 +1,15 @@
 # Assignment 5
 
-** git clone the repository :
+**Git clone the repository :
 
 `git clone https://github.com/dkoundinya/Autonomy_Science_Team_4.git `
 
 
 This assignment consists of 3 parts:
 
-  -Part 1: Turtlebot burger Wall Following
-  -Part 2: Turtlebot burger Obstacle Avoidance
-  -Part 3: Turtlebot burger Real-World Implementation of Obstacle Avoidance
+  - Part 1: Turtlebot burger Wall Following
+  - Part 2: Turtlebot burger Obstacle Avoidance
+  - Part 3: Turtlebot burger Real-World Implementation of Obstacle Avoidance
 
 ## Part 1: Wall Following
 
