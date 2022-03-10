@@ -30,4 +30,6 @@ To implement obstacle avoidance in real-world-turtlebot setting
 
 `rosrun assignment_5 Part_3.py`
 
+
 Videos of simulations and real-world implementation (Part 3) are located in the videos folder
+[![Watch the video](https://github.com/dkoundinya/Autonomy_Science_Team_4/tree/main/assignment_5/videos)
