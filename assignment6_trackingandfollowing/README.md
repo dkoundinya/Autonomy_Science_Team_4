@@ -23,9 +23,11 @@ Run the task1.launch file in the launch folder using the following command:
 
   To implement april tag following in real world use the following command:
   
-`rosrun image_transport republish compressed in:=camera/image raw out:=camera/image_raw
-roslaunch apriltag_ros continuous_detection.launch
-rosrun assignment6_trackingandfollowing Tagfollowing.py`
+`rosrun image_transport republish compressed in:=camera/image raw out:=camera/image_raw`
+
+`roslaunch apriltag_ros continuous_detection.launch`
+
+`rosrun assignment6_trackingandfollowing Tagfollowing.py`
 
 
 
@@ -39,5 +41,5 @@ rosrun assignment6_trackingandfollowing Tagfollowing.py`
 
 `roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch`
 
-![Watch the video](https://github.com/dkoundinya/Autonomy_Science_Team_4/tree/main/assignment6_trackingandfollowing/Videos)
+![April Tag Follow](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/assignment6_trackingandfollowing/src/Videos/Realworld.gif
 
