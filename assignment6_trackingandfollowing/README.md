@@ -34,7 +34,7 @@ Run the task1.launch file in the launch folder using the following command:
 ## Videos of simulations and real-world implementation  are located in the videos folder
 
 ![April Tag Follow](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/assignment6_trackingandfollowing/src/Videos/Realworld.gif)
-![Line Follow Simulation](assignment6_trackingandfollowing/src/Videos/Line_following.gif)
+![Line Follow Simulation](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/assignment6_trackingandfollowing/src/Videos/Line_following.gif)
 
 ## Turtlebot Bringup commands:
 
