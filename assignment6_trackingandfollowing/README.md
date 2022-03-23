@@ -46,6 +46,8 @@ Run the task1.launch file in the launch folder using the following command:
 
 ![Line Follow Simulation](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/assignment6_trackingandfollowing/src/Videos/Line_following.gif)
 
+![Sim2Real for Line Following](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/assignment6_trackingandfollowing/src/Videos/sim2real_line_follow.gif)
+
 
 
 
