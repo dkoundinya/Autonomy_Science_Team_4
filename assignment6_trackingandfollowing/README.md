@@ -16,7 +16,7 @@ This assignment consists of 3 parts:
 
 Run the task1.launch file in the launch folder using the following command:
 
-`roslaunch assignment6_trackingandfollowing task1.launch`
+`roslaunch assignment6_trackingandfollowing turtlebot3_follow_line.launch`
 
 
 ## Part 2: April Tag Following
