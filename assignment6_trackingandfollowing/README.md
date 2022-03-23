@@ -18,6 +18,8 @@ Run the task1.launch file in the launch folder using the following command:
 
 `roslaunch assignment6_trackingandfollowing turtlebot3_follow_line.launch`
 
+This launch file runs follow_line.world, which is a yellow race track. It then implements the script follow_line_step_hsv.py on the launched world to perform line following on simulation.
+
 
 ## Part 2: April Tag Following
 
