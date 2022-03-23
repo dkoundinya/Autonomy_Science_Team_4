@@ -21,6 +21,14 @@ Run the task1.launch file in the launch folder using the following command:
 
 ## Part 2: April Tag Following
 
+### Turtlebot Bringup commands:
+
+`Run roscore at remote pc`
+
+`roslaunch turtlebot3_bringup turtlebot3_robot.launch`
+
+`roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch`
+
   To implement april tag following in real world use the following command:
   
 `rosrun image_transport republish compressed in:=camera/image raw out:=camera/image_raw`
@@ -37,13 +45,7 @@ Run the task1.launch file in the launch folder using the following command:
 
 ![Line Follow Simulation](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/assignment6_trackingandfollowing/src/Videos/Line_following.gif)
 
-## Turtlebot Bringup commands:
 
-`Run roscore at remote pc`
-
-`roslaunch turtlebot3_bringup turtlebot3_robot.launch`
-
-`roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch`
 
 
 
