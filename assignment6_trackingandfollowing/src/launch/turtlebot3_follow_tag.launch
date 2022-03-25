@@ -1,0 +1,7 @@
+<launch>
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="burger"/>
+  <include file="$(find turtlebot3_bringup)/launch/turtlebot3_robot.launch">
+  <include file="$(find turtlebot3_bringup)/launch/turtlebot3_rpicamera.launch">
+  <include file="$(find apriltag_ros)/launch/continuous_detection.launch">
+  <node name="Apriltag_ros" pkg="assignment6_trackingandfollowing" type="Tagfollowing.py" />
+</launch>
