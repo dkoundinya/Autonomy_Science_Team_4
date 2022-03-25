@@ -14,7 +14,7 @@ This assignment consists of 3 parts:
 
 ## Part 1: Track Following
 
-Run the task1.launch file in the launch folder using the following command:
+Run the turtlebot3_follow_line.launch file in the launch folder using the following command:
 
 `roslaunch assignment6_trackingandfollowing turtlebot3_follow_line.launch`
 
