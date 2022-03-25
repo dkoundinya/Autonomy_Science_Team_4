@@ -25,19 +25,15 @@ This launch file runs follow_line.world, which is a yellow race track. It then i
 
 ### Turtlebot Bringup commands:
 
-`Run roscore at remote pc`
+Run roscore at remote pc
 
-`roslaunch turtlebot3_bringup turtlebot3_robot.launch`
+With Image transport package using raw images of camera as input to april tag node :
 
-`roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch`
-
-  To implement april tag following in real world use the following command:
-  
 `rosrun image_transport republish compressed in:=camera/image raw out:=camera/image_raw`
 
-`roslaunch apriltag_ros continuous_detection.launch`
+  To implement april tag following in real world use the following command:
 
-`rosrun assignment6_trackingandfollowing Tagfollowing.py`
+`roslaunch assignment6_trackingandfollowing turtlebot3_follow_tag.launch`
 
 
 
