@@ -47,7 +47,11 @@ For Hokuyo Sensor :
  
 `rosrun map_server map_saver -f ~/slammapwithokuyo`
 
-The brief report on our findings and videos of different sensors  is stored in report folder and videos folder respectively
+The brief report on our findings  of different sensors  is stored in report folder 
+
+Due to huge size of videos it is saved on below link in one drive folder 
+![link](https://clemson-my.sharepoint.com/:f:/g/personal/skarna_clemson_edu/Ejajfs2bJkNJqB3lU6u1FdgBM25Tg37W4-jR6DCvEPcSOQ?e=iLaRcH)
+
 
 
 
