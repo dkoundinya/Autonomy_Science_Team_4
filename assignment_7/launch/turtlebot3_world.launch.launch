@@ -1,0 +1,6 @@
+<launch>
+<include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch"/>
+<include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch"/>
+<!-- <include file="$(find turtlebot3_teleop)/launch/turtlebot3_teleop_key.launch"/> -->
+<node name= "teleop" pkg="assignment_7" type="teleop.sh"   />
+</launch>
