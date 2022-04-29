@@ -1,0 +1,8 @@
+<launch>
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="burger"/>
+  <include file="$(find turtlebot3_bringup)/launch/turtlebot3_robot.launch">
+  <include file="$(find turtlebot3_bringup)/launch/turtlebot3_rpicamera.launch">
+  <include file="$(find apriltag_ros)/launch/continuous_detection.launch">
+  <include file="$(find darknet_ros)/launch/yolo_v3.launch">
+  
+</launch>
