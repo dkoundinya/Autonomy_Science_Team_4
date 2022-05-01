@@ -2,25 +2,19 @@
 
   <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
   
-
-  
-  
-  <arg name="multi_robot_name" default="tb_0"/>
-    <arg name="x_pos" default="1.43"/>
+  <arg name="multi_robot_name1" default="tb3_lead"/>
+  <arg name="x_pos" default="1.43"/>
   <arg name="y_pos" default="0.25"/>
   <arg name="z_pos" default="0"/>  
   <arg name="yaw_pos" default="1.553875"/> 
   
 
 
-  <arg name="multi_robot_name2" default="tb_1"/>
+  <arg name="multi_robot_name2" default="tb3_follow"/>
   <arg name="x_pos2" default="-0.2"/>
   <arg name="y_pos2" default="1.6"/>
   <arg name="z_pos2" default="0"/>  
   <arg name="yaw_pos2" default="3.14"/>
-
-
-
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find aue_finals)/worlds/turtlebot3_final.world" />
@@ -30,38 +24,19 @@
     <arg name="headless" value="false"/>
     <arg name="debug" value="false"/>
   </include>  
-
-   <!--<include file="$(find person_sim)/launch/init_small_standing_person.launch">
-   </include>-->
-
-   <!--<include file="$(find turtle_tf_3d)/launch/person_standing_keyboard_move.launch">
-   </include>-->
-
-  <!--<include file="$(find turtlebot3_bringup)/launch/includes/description.launch.xml">
-    <arg name="model" value="$(arg model)" />
-  </include>-->
-
-  <!--<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
-    <param name="publish_frequency" type="double" value="50.0" />
-    <param name="tf_prefix" value="$(arg multi_robot_name)"/>
-  </node>-->
   
- 
-  
- <!-- <node name="obs" pkg="aue_finals" type="obstacleAvoidance.py" /> -->
-  <!--<node name="cam" pkg="assignment_6" type="follow_line_step_hsv.py" /> -->
-  <!--<node name="rviz" pkg="rviz" type="rviz" args="-d $(find turtlebot3_gazebo)/rviz/turtlebot3_gazebo_model.rviz"/>-->
-  
-  <group ns = "$(arg multi_robot_name)">
+    
+  <group ns = "$(arg multi_robot_name1)">
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_burger_april.urdf.xacro" />
-
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen">
       <param name="publish_frequency" type="double" value="50.0" />
-      <param name="tf_prefix" value="$(arg multi_robot_name)" />
+      <param name="tf_prefix" value="$(arg multi_robot_name1)" />
     </node>
     
-    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg multi_robot_name) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -Y $(arg yaw_pos) -param robot_description" />
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model tb3_follow -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -Y $(arg yaw_pos) -param robot_description" />
   </group>
+  
+  
 
   <group ns = "$(arg multi_robot_name2)">
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
@@ -71,15 +46,14 @@
       <param name="tf_prefix" value="$(arg multi_robot_name2)" />
     </node>
 
-    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg multi_robot_name2) -x $(arg x_pos2) -y $(arg y_pos2) -z $(arg z_pos2) -Y $(arg yaw_pos2) -param robot_description" />
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model tb3_lead -x $(arg x_pos2) -y $(arg y_pos2) -z $(arg z_pos2) -Y $(arg yaw_pos2) -param robot_description" />
   </group>
   
-  
-  
-  
-  
-  
 </launch>
+
+  
+
+
 
 
 
