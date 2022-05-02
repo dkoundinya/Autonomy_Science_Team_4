@@ -17,6 +17,8 @@
   <arg name="yaw_pos2" default="3.14"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
+  <include file="$(find apriltag_ros)/launch/continuous_detection.launch"> 
+  <include file="$(turtlebot3_teleop)/launch/ turtlebot3_teleop_key.launch">
     <arg name="world_name" value="$(find aue_finals)/worlds/turtlebot3_final.world" />
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
