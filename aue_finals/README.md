@@ -53,7 +53,7 @@ Requirements : Before running the simulation, the following files must be presen
 
 1. World and model files of the environment if in aue_finals folder, run following commands :
 
-'export GAZEBO_MODEL_PATH=/path/to/workspace/src/aue_finals/models:/path/to/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models'
+`export GAZEBO_MODEL_PATH=/path/to/workspace/src/aue_finals/models:/path/to/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models`
 
 2. Run the launch file to run all the tasks as described above :
 
