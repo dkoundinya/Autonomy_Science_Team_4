@@ -46,8 +46,12 @@
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen">
       <param name="publish_frequency" type="double" value="50.0" />
       <param name="tf_prefix" value="$(arg multi_robot_name2)" />
+      <node name="republish" type="republish" pkg="image_transport" output="screen" 	args="compressed in:=/camera/rgb/image_raw raw out:=/camera/rgb/image_raw" /> 
+      <node name="image_view" type="image_view" pkg="image_view" output="screen" 	args="image:=/tb3_lead/camera/rgb/image_raw" />
+  
+      
     </node>
-
+    
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model tb3_lead -x $(arg x_pos2) -y $(arg y_pos2) -z $(arg z_pos2) -Y $(arg yaw_pos2) -param robot_description" />
     <node pkg="aue_finals" type="Final_code_sim.py" name="turtlebot3_node"/>
    </group>
