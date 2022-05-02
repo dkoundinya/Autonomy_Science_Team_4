@@ -15,6 +15,15 @@ The Objective of the Capstone project can be summarized in following 4 parts:
 
 Turtlebot burger Sim to Real-World Implementation of all above tasks
 
+### Package Dependencies
+
+    Turtlebot3 packages
+    Turtlebot3 simulation
+    ROS-perception Open-CV
+    Darknet ROS (YOLO)
+    Apriltag ROS
+    
+
 ## Real-world:
 
 
@@ -32,13 +41,7 @@ darknet ros launch for stop sign detection
 
 continuous detection launch for april tag detection
 
-### Dependencies
 
-    Turtlebot3 packages
-    Turtlebot3 simulation
-    ROS-perception Open CV
-    Apriltag ROS
-    Darknet ROS (YOLO)
 
 
 
