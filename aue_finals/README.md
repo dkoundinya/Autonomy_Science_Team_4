@@ -58,7 +58,7 @@ Requirements : Before running the simulation, the following files must be presen
 
 `roslaunch aue_finals turtlebot3_autonomy_final.launch`
 
-![Map of Environment](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/aue_finals/Screenshot%20from%202022-05-02%2011-11-25.png)
+![Map of Environment](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/aue_finals/GazeboMap.png)
 
 
 Videos of simulations  implementation  are located in the videos folder
