@@ -52,7 +52,7 @@ Requirements : Before running the simulation, the following files must be presen
 
 2. Run the launch file to run all the tasks as described above :
 
-'roslaunch aue_finals turtlebot3_autonomy_final.launch' 
+`roslaunch aue_finals turtlebot3_autonomy_final.launch`
 
 
 Videos of simulations  implementation  are located in the videos folder
