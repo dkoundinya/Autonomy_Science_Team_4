@@ -33,6 +33,9 @@ darknet ros launch for stop sign detection
 continuous detection launch for april tag detection
 
 
+![final_Project_Track](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/aue_finals/Final_Project.png)
+
+
 It simultaneously runs the final code python script that is programmed as follows:
 
 The turtlebot is equipped with two sensors LDS LiDAR and Raspberry Pi Camera that are continuosly used for performing all the tasks
