@@ -4,5 +4,5 @@
   <include file="$(find turtlebot3_bringup)/launch/turtlebot3_rpicamera.launch">
   <include file="$(find apriltag_ros)/launch/continuous_detection.launch">
   <include file="$(find darknet_ros)/launch/yolo_v3.launch">
-  <node pkg="aue_finals" type="Final_code.py" name="turtlebot3"/>
+  <node pkg="aue_finals" type="Final_code.py" name="turtlebot3_node"/>
 </launch>
