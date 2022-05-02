@@ -22,10 +22,14 @@ Run the final.launch file in the launch folder using the following command:
 
 `roslaunch aue_finals final.launch`
 
-This file brings up following launch files 
-raspberry camera node, 
-turtlebot bringup, 
+This file brings up following launch files :
+
+turtlebot bringup 
+
+raspberry camera node
+
 darknet ros launch for stop sign detection 
+
 continuous detection launch for april tag detection
 
 ![Map of Environment](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/aue_finals/Screenshot%20from%202022-05-02%2011-11-25.png)
