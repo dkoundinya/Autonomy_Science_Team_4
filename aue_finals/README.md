@@ -32,7 +32,6 @@ darknet ros launch for stop sign detection
 
 continuous detection launch for april tag detection
 
-![Map of Environment](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/aue_finals/Screenshot%20from%202022-05-02%2011-11-25.png)
 
 It simultaneously runs the final code python script that is programmed as follows:
 
@@ -58,6 +57,8 @@ Requirements : Before running the simulation, the following files must be presen
 2. Run the launch file to run all the tasks as described above :
 
 `roslaunch aue_finals turtlebot3_autonomy_final.launch`
+
+![Map of Environment](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/aue_finals/Screenshot%20from%202022-05-02%2011-11-25.png)
 
 
 Videos of simulations  implementation  are located in the videos folder
