@@ -1,4 +1,4 @@
-# Assignment 5
+# Capstone Project
 
 ### Git clone the repository :
 
