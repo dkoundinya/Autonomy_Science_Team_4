@@ -28,7 +28,7 @@ turtlebot bringup,
 darknet ros launch for stop sign detection 
 continuous detection launch for april tag detection
 
-[Map of Environment]!https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/aue_finals/Screenshot%20from%202022-05-02%2011-11-25.png
+![Map of Environment](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/aue_finals/Screenshot%20from%202022-05-02%2011-11-25.png)
 
 It simultaneously runs the final code python script that is programmed as follows:
 
@@ -46,9 +46,16 @@ d. While following the line Darknet-ros package is used for detection of STOP si
 
 Requirements : Before running the simulation, the following files must be present and placed in the correct folders:
 
-1. World and model files of the 
+1. World and model files of the environment if in aue_finals folder, run following commands :
+
+'export GAZEBO_MODEL_PATH=~/path/to/workspace/src/aue_finals/models:~/path/to/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models'
+
+2. Run the launch file to run all the tasks as described above :
+
+'roslaunch aue_finals turtlebot3_autonomy_final.launch' 
 
 
 Videos of simulations  implementation  are located in the videos folder
+
 
 
