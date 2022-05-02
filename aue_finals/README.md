@@ -32,13 +32,22 @@ darknet ros launch for stop sign detection
 
 continuous detection launch for april tag detection
 
+### Dependencies
+
+    Turtlebot3 packages
+    Turtlebot3 simulation
+    ROS-perception Open CV
+    Apriltag ROS
+    Darknet ROS (YOLO)
+
+
 
 ![final_Project_Track](https://github.com/dkoundinya/Autonomy_Science_Team_4/blob/main/aue_finals/Final_Project.png)
 
 
 It simultaneously runs the final code python script that is programmed as follows:
 
-The turtlebot is equipped with two sensors LDS LiDAR and Raspberry Pi Camera that are continuosly used for performing all the tasks
+The turtlebot is equipped with two sensors LDS LiDAR and Raspberry Pi Camera that are continuosly used for performing all the tasks :
 
 a. The obstacle Avoidance on the turtlebot was designed using PID controller wherein the bot always checks for obstacles in front, left and right using the ranges obtained from LDS LiDAR.
 
