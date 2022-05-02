@@ -236,7 +236,7 @@ class LineFollower(object):
 
 def main():
 
-    rospy.init_node('line_following_node', anonymous=True)
+    rospy.init_node('turtlebot3_node', anonymous=True)
     rate = rospy.Rate(5)
     line_follower_object = LineFollower()    
     ctrl_c = False
