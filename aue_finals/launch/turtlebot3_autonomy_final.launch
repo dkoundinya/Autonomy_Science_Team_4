@@ -49,7 +49,8 @@
     </node>
 
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model tb3_lead -x $(arg x_pos2) -y $(arg y_pos2) -z $(arg z_pos2) -Y $(arg yaw_pos2) -param robot_description" />
-  </group>
+    <node pkg="aue_finals" type="Final_code_sim.py" name="turtlebot3_node"/>
+   </group>
   
 </launch>
 
