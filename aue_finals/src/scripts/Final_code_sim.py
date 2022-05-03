@@ -52,24 +52,24 @@ class LineFollower(object):
                     # stopper=time.time()
 
 
-                    # #######check stop sign distance########
-                    # min_x=box.xmin
-                    # max_x=box.xmax
-                    # if (min_x<=320):
-                    #     scan_start= int(305+((min_x/320)*55))
-                    # else:
-                    #     scan_start=int(0+(min_x/639)*55)
+                    #######check stop sign distance########
+                    min_x=box.xmin
+                    max_x=box.xmax
+                    if (min_x<=320):
+                        scan_start= int(305+((min_x/320)*55))
+                    else:
+                        scan_start=int(0+(min_x/639)*55)
 
-                    # if (max_x<=320):
-                    #     scan_end= int(305+((max_x/320)*55))
-                    # else:
-                    #     scan_end=int(0+(max_x/639)*55)
+                    if (max_x<=320):
+                        scan_end= int(305+((max_x/320)*55))
+                    else:
+                        scan_end=int(0+(max_x/639)*55)
                     
         
-                    # print(range)
+                    print(range)
 
-                    # stop_dist=min((range[scan_start]),(range[scan_end]))
-                    # print(min_x,max_x,scan_start,scan_end,stop_dist)
+                    stop_dist=min((range[scan_start]),(range[scan_end]))
+                    print(min_x,max_x,scan_start,scan_end,stop_dist)
                     
                     # if stop_dist<=0.7:
                     print('STOPPING')
